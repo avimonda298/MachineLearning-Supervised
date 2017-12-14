@@ -1,4 +1,4 @@
-# Python
+# Python Sorting Algorithm Program
  Python program sorting elements
 def bubbleSort(alist):
     for passnum in range(len(alist)-1,0,-1):
