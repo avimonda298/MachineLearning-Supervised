@@ -1,29 +1,11 @@
-# Python Sorting Algorithm Program
- Python program sorting elements
-def bubbleSort(alist):
-    for passnum in range(len(alist)-1,0,-1):
-        for i in range(passnum):
-            if alist[i]>alist[i+1]:
-                temp = alist[i]
-                alist[i] = alist[i+1]
-                alist[i+1] = temp
+All data is labeled and the algorithms learn to predict the output from the input data. 
+The goal is to predict output variables from the input data. 
 
-alist = [54,26,93,17,77,31,44,55,20]
-bubbleSort(alist)
-print(alist)
+Supervised machine learning grouped into classification and regression problems.
 
+Classification: When output variable is category 
+Regression: when output variable is continouns real value
 
-def selectionSort(alist):
-   for fillslot in range(len(alist)-1,0,-1):
-       positionOfMax=0
-       for location in range(1,fillslot+1):
-           if alist[location]>alist[positionOfMax]:
-               positionOfMax = location
-
-       temp = alist[fillslot]
-       alist[fillslot] = alist[positionOfMax]
-       alist[positionOfMax] = temp
-
-alist = [54,26,93,17,77,31,44,55,20]
-selectionSort(alist)
-print(alist)
+RandomForest, XGBoost for classification and regression
+Linear regression for regression problems
+Support vector machines for classification problems
